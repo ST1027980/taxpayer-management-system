@@ -1,0 +1,60 @@
+# taxpayer-management-system
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxpayer Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Taxpayer Management System</h1>
+  <p>Public Service Data Management Portal</p>
+</header>
+
+<main>
+  <!-- Registration Form -->
+  <section class="card">
+    <h2>Register Taxpayer</h2>
+
+    <form id="taxForm">
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="e.g. Sizwe Ndzinisa" required>
+
+      <label>Tax ID</label>
+      <input type="text" id="taxId" placeholder="10-digit Tax ID" required>
+
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="example@email.com" required>
+
+      <button type="submit">Save Taxpayer</button>
+      <p class="error" id="errorMsg"></p>
+    </form>
+  </section>
+
+  <!-- Taxpayer Table -->
+  <section class="card">
+    <h2>Registered Taxpayers</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Tax ID</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="taxpayerList"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
